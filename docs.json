@@ -1,39 +1,81 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "orbis documentation",
   "colors": {
-    "primary": "#ADD8E6",
-    "light": "#ADD8E6",
-    "dark": "#ADD8E6"
+    "primary": "#60a5fa",
+    "light": "#93c5fd",
+    "dark": "#3b82f6"
   },
+  "backgroundImage": "/background.png",
   "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
-        "tab": "bot",
+        "tab": "guides",
         "groups": [
           {
-            "group": "server related",
+            "group": "getting started",
             "pages": [
-              "afk",
+              "index",
               "quickstart",
-              "development"
+              "features"
+            ]
+          },
+          {
+            "group": "modules",
+            "pages": [
+              "modules/afk",
+              "modules/moderation",
+              "modules/fun",
+              "modules/utility"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "commands",
+        "groups": [
+          {
+            "group": "utility",
+            "pages": [
+              "commands/afk",
+              "commands/ping"
+            ]
+          },
+          {
+            "group": "moderation",
+            "pages": [
+              "commands/ban",
+              "commands/kick",
+              "commands/mute"
+            ]
+          },
+          {
+            "group": "fun",
+            "pages": [
+              "commands/meme",
+              "commands/8ball"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "api reference",
         "groups": []
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "orbis",
-          "href": "https://mintlify.com/blog",
-          "icon": "papaerplane"
+          "anchor": "invite bot",
+          "href": "https://discord.com/oauth2/authorize",
+          "icon": "robot"
+        },
+        {
+          "anchor": "support server",
+          "href": "https://discord.gg/your-server",
+          "icon": "discord"
         }
       ]
     }
@@ -45,14 +87,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "support",
+        "href": "https://discord.gg/your-server"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "add to server",
+      "href": "https://discord.com/oauth2/authorize"
     }
   },
   "contextual": {
@@ -69,9 +111,10 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/your-bot",
+      "github": "https://github.com/your-username",
+      "linkedin": "https://linkedin.com/company/your-company",
+      "discord": "https://discord.gg/your-server"
     }
   }
 }
