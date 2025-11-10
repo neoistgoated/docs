@@ -22,6 +22,7 @@ Set yourself as AFK with an optional reason:
 **Aliases**: You can also use `!away`
 
 **Examples**:
+
 ```bash
 !afk
 !afk eating lunch
@@ -30,6 +31,7 @@ Set yourself as AFK with an optional reason:
 ```
 
 The bot will confirm your AFK status:
+
 ```
 🌙 YourName is now AFK
 └─ reason: eating lunch
@@ -44,16 +46,14 @@ The bot will confirm your AFK status:
 You don't need to do anything special! Just send any regular message in the server.
 
 The bot will automatically:
+
 - Remove your AFK status
 - Welcome you back
 - Show how long you were away
 
 **Example**:
-```
-😎 welcome back, YourName!
-you were away for 2 hours and 30 minutes
-└─ reason: eating lunch
-```
+
+![Afkex Pn](/images/afkex.png)
 
 <Note>
   The welcome back message will automatically delete after 15 seconds to keep the chat clean.
@@ -79,15 +79,12 @@ If someone mentions you while you're AFK, the bot will automatically reply to th
   <Card title="Automatic Return" icon="arrow-rotate-left">
     Your AFK status is removed automatically when you send a message - no need to manually turn it off!
   </Card>
-  
   <Card title="Custom Reasons" icon="message">
     Let people know why you're away with a personalized message
   </Card>
-  
   <Card title="Time Tracking" icon="clock">
     See exactly how long you or others have been AFK
   </Card>
-  
   <Card title="Clean Interface" icon="broom">
     Messages auto-delete to keep your server tidy
   </Card>
@@ -95,59 +92,57 @@ If someone mentions you while you're AFK, the bot will automatically reply to th
 
 ## Command Reference
 
-| Command | Aliases | Description | Example |
-|---------|---------|-------------|---------|
-| `!afk [reason]` | `!away` | Set your AFK status | `!afk brb 5 min` |
-| `!ping` | - | Check bot responsiveness | `!ping` |
+| Command         | Aliases | Description              | Example          |
+| --------------- | ------- | ------------------------ | ---------------- |
+| `!afk [reason]` | `!away` | Set your AFK status      | `!afk brb 5 min` |
+| `!ping`         | -       | Check bot responsiveness | `!ping`          |
 
 ## Time Display
 
 The bot shows how long you've been away in an easy-to-read format:
 
-| Your Time Away | What You'll See |
-|----------------|-----------------|
-| Less than 1 minute | "45 seconds" |
-| Less than 1 hour | "5 minutes and 30 seconds" |
-| Less than 1 day | "2 hours and 15 minutes" |
-| 1 day or more | "3 days and 4 hours" |
+| Your Time Away     | What You'll See            |
+| ------------------ | -------------------------- |
+| Less than 1 minute | "45 seconds"               |
+| Less than 1 hour   | "5 minutes and 30 seconds" |
+| Less than 1 day    | "2 hours and 15 minutes"   |
+| 1 day or more      | "3 days and 4 hours"       |
 
 ## Frequently Asked Questions
 
 <AccordionGroup>
   <Accordion title="How do I remove my AFK status?">
     Just send any message! Your AFK status is automatically removed when you're active again.
-    
+
     **Note**: Using `!afk` again won't remove your status - it will update your reason instead.
   </Accordion>
-  
   <Accordion title="Can I change my AFK reason?">
     Yes! Just use the `!afk` command again with a new reason:
+
     ```bash
     !afk new reason here
     ```
+
     The bot will confirm your reason has been updated.
   </Accordion>
-  
   <Accordion title="What if I don't want to give a reason?">
     That's perfectly fine! Just use `!afk` without any text:
+
     ```bash
     !afk
     ```
+
     Your status will be set without displaying a specific reason.
   </Accordion>
-  
   <Accordion title="Will the bot notify everyone who mentions me?">
     The bot will reply to the first person who mentions you. This prevents spam if multiple people mention you in the same message.
   </Accordion>
-  
   <Accordion title="Why do the bot messages disappear?">
     To keep your server clean! Welcome back messages delete after 15 seconds, and AFK notifications delete after 20 seconds. This prevents the bot from cluttering your channels.
   </Accordion>
-  
   <Accordion title="Can I see how long someone else has been AFK?">
     Yes! Just mention them in a message. The bot will reply showing how long they've been away and their reason (if they set one).
   </Accordion>
-  
   <Accordion title="Does my AFK status carry over to other servers?">
     No, AFK status is specific to each server where the bot is present. Setting AFK in one server won't affect your status in others.
   </Accordion>
@@ -174,6 +169,7 @@ The bot shows how long you've been away in an easy-to-read format:
 ## Examples in Action
 
 ### Setting AFK
+
 ```
 User: !afk taking a nap
 
@@ -182,6 +178,7 @@ Bot: 🌙 User is now AFK
 ```
 
 ### Someone Mentions You
+
 ```
 Friend: Hey @User are you there?
 
@@ -191,6 +188,7 @@ Bot: 😴 User is currently AFK
 ```
 
 ### Coming Back
+
 ```
 User: I'm back!
 
@@ -200,6 +198,7 @@ Bot: 😎 welcome back, User!
 ```
 
 ### Updating Your Status
+
 ```
 User: !afk actually going to the gym
 
