@@ -14,9 +14,9 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "server related",
             "pages": [
-              "index",
+              "afk",
               "quickstart",
               "development"
             ]
